@@ -2,6 +2,18 @@
 
 Перевод под курсором для Windows: в любой программе, в браузере, в играх.
 
+## Скачать
+
+1. Скачайте `Tolmach.exe` со страницы [последнего релиза](https://github.com/Skufik2007/Tolmach/releases/latest).
+2. Нужен .NET 8 Desktop Runtime (x64). Если его нет, Windows предложит
+   скачать его при первом запуске, или поставьте заранее:
+   https://dotnet.microsoft.com/download/dotnet/8.0
+3. Положите `Tolmach.exe` в постоянную папку, например
+   `%LOCALAPPDATA%\Programs\Tolmach\`, и запустите.
+   Автозапуск включается в меню значка в трее.
+
+Работает в Windows 10 и 11 (x64).
+
 ## Как пользоваться
 
 | Что сделать | Что переведётся |
@@ -58,7 +70,7 @@
 
 ## Установка
 
-`%LOCALAPPDATA%\Programs\Tolmach\Tolmach.exe`, автозапуск — задание
+Рекомендуемое место: `%LOCALAPPDATA%\Programs\Tolmach\Tolmach.exe`, автозапуск — задание
 Планировщика «Tolmach» при входе в Windows (выключается в меню значка).
 Настройки и журнал — `%LOCALAPPDATA%\Tolmach`.
 
