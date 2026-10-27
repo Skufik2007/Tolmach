@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Windows 10 SDK projection: OCR and speech come from WinRT. -->
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>Tolmach</AssemblyName>
+    <RootNamespace>Tolmach</RootNamespace>
+    <Version>0.2.0</Version>
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Word frequency lists for fixing OCR misreadings, see Dictionaries/README.md. -->
+    <EmbeddedResource Include="Dictionaries/en.txt.gz" LogicalName="Tolmach.Dictionaries.en.txt.gz" />
+    <EmbeddedResource Include="Dictionaries/ru.txt.gz" LogicalName="Tolmach.Dictionaries.ru.txt.gz" />
+  </ItemGroup>
+
+</Project>
